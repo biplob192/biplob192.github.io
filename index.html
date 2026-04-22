@@ -1,496 +1,493 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="scroll-smooth">
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>MD BIPLOB MIA</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/resume.min.css" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD. Biplob Mia | Full-Stack Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#475569',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+<body class="bg-slate-50 text-slate-900 font-sans">
 
-<body id="page-top">
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">MD BIPLOB MIA</span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="Profile Image">
-      </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-        </li>
-        <hr>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="/documents/MD_BIPLOB_MIA.pdf" target="_blank">
-            <span style="font-weight: bold; color: #fff;">Get Resume</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container-fluid p-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-      <div class="my-auto">
-        <h1 class="mb-0">MD BIPLOB
-          <span class="text-primary">MIA</span>
-        </h1>
-        <div class="subheading mb-5">
-          <strong>Senior Software Engineer (PHP | Laravel | Node | Express | Digital Ocean | Docker | MySQL | NoSQL (MongoDB) | Redis | Vue | React)</strong> <br>
-          +8801725361208 |
-          <a href="mailto:biplob.net2@gmail.com">biplob.net2@gmail.com</a>
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="#home" class="flex items-center space-x-2 group">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:rotate-12 transition-transform">
+                        <rect width="40" height="40" rx="8" fill="#2563eb"/>
+                        <path d="M10 28V12L15 22L20 12V28" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M22 28V12H27C28.5 12 30 13.5 30 15.5C30 17.5 28.5 19 27 19C28.5 19 30 20.5 30 22.5C30 24.5 28.5 26 27 26H22V28" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M30 12L35 20L30 28" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+                    </svg>
+                    <span class="font-black text-2xl text-primary tracking-tighter">MBM</span>
+                </a>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="hover:text-primary transition-colors font-medium">Home</a>
+                        <a href="#about" class="hover:text-primary transition-colors font-medium">About</a>
+                        <a href="#experience" class="hover:text-primary transition-colors font-medium">Experience</a>
+                        <a href="#skills" class="hover:text-primary transition-colors font-medium">Skills</a>
+                        <a href="#projects" class="hover:text-primary transition-colors font-medium">Projects</a>
+                        <a href="#contact" class="hover:text-primary transition-colors font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-700 hover:text-primary">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
         </div>
-        <p class="mb-5 text-justify">
-          <strong>Professional Summary:</strong>
-          Experienced Full-stack Web Developer with expertise in PHP, Laravel, Vue.js, and MySQL. Proficient in building web applications, APIs, and responsive user interfaces. Skilled in project
-          management and working collaboratively in cross-functional teams. Passionate about staying updated with the latest web development trends and continuously enhancing skills to deliver
-          cutting-edge solutions.
-        </p>
-        <ul class="list-inline list-social-icons mb-0">
-          <li class="list-inline-item">
-            <a href="https://facebook.com/mdbiplobmiabd" target="_blank">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://twitter.com/md_biplob_mia" target="_blank">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.linkedin.com/in/md-biplob-mia-62374084/" target="_blank">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://github.com/biplob192" target="_blank">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-        </ul>
-      </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                <a href="#home" class="block px-3 py-2 rounded-md hover:bg-slate-100">Home</a>
+                <a href="#about" class="block px-3 py-2 rounded-md hover:bg-slate-100">About</a>
+                <a href="#experience" class="block px-3 py-2 rounded-md hover:bg-slate-100">Experience</a>
+                <a href="#skills" class="block px-3 py-2 rounded-md hover:bg-slate-100">Skills</a>
+                <a href="#projects" class="block px-3 py-2 rounded-md hover:bg-slate-100">Projects</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md hover:bg-slate-100">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-16 bg-gradient-to-br from-slate-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col md:flex-row items-center">
+            <div class="md:w-3/5 text-center md:text-left">
+                <h1 class="text-4xl md:text-6xl font-black text-slate-900 mb-4 uppercase whitespace-nowrap">
+                    MD. Biplob Mia
+                </h1>
+                <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6">
+                    Full-Stack Software Engineer
+                </h2>
+                <p class="text-lg text-slate-600 mb-8 max-w-xl leading-relaxed">
+                    With over <span class="text-primary font-bold underline decoration-2 underline-offset-4">6 years</span> of professional experience delivering scalable web applications and high-performance APIs.
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#projects" class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl">
+                        View Projects
+                    </a>
+                    <a href="MD_BIPLOB_MIA.pdf" download class="bg-slate-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-slate-800 transition-all flex items-center shadow-lg">
+                        <i class="fas fa-download mr-2"></i> Download Resume
+                    </a>
+                </div>
+                <div class="mt-8 flex justify-center md:justify-start space-x-6 text-2xl text-slate-500">
+                    <a href="https://github.com/biplob192" target="_blank" class="hover:text-primary transition-colors"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/biplob192" target="_blank" class="hover:text-primary transition-colors"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:biplob.net2@gmail.com" class="hover:text-primary transition-colors"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="md:w-2/5 mt-12 md:mt-0 flex justify-center">
+                <div class="relative w-full max-w-md">
+                    <div class="bg-slate-900 rounded-2xl shadow-2xl p-4 overflow-hidden border border-slate-700 animate-float">
+                        <div class="flex space-x-2 mb-4">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                        </div>
+                        <div class="font-mono text-sm space-y-2">
+                            <p class="text-blue-400">class <span class="text-yellow-400">SoftwareEngineer</span> {</p>
+                            <p class="text-blue-400 ml-4">constructor() {</p>
+                            <p class="text-slate-300 ml-8">this.<span class="text-blue-300">name</span> = <span class="text-green-400">'MD. BIPLOB MIA'</span>;</p>
+                            <p class="text-slate-300 ml-8">this.<span class="text-blue-300">experience</span> = <span class="text-orange-400">'6+ Years'</span>;</p>
+                            <p class="text-slate-300 ml-8">this.<span class="text-blue-300">skills</span> = [<span class="text-green-400">'Laravel'</span>, <span class="text-green-400">'Vue'</span>, <span class="text-green-400">'Node'</span>];</p>
+                            <p class="text-blue-400 ml-4">}</p>
+                            <p class="text-blue-400 ml-4">develop() {</p>
+                            <p class="text-slate-300 ml-8">return <span class="text-green-400">'Scalable Solutions'</span>;</p>
+                            <p class="text-blue-400 ml-4">}</p>
+                            <p class="text-blue-400">}</p>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-2xl shadow-2xl transform rotate-3">
+                        <span class="block text-4xl font-black">6+</span>
+                        <span class="block text-sm font-bold uppercase tracking-widest">Years excellence</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-      <div class="my-auto">
-        <h2 class="mb-5">Experience (06 Years+)</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Software Engineer</h3>
-            <div class="subheading mb-3"><a href="https://nodesdigitalbd.com/" target="_blank">Nodes Digital Limited</a></div>
-            <p class="text-justify">
-              I have an extensive background in full-stack development, where I've excelled in various key areas. I've played a pivotal role in developing robust APIs, utilizing the Laravel framework,
-              to facilitate seamless communication between mobile and web applications. My expertise extends to designing and managing complex MySQL database schemas, ensuring efficient data
-              organization and retrieval. <br><br> On the frontend, I've skillfully implemented dynamic features using Vue.js, enhancing the user experience by creating interactive, responsive
-              components. To ensure optimal performance, I've conducted rigorous load testing and carried out optimization measures, proactively identifying and addressing bottlenecks. My commitment
-              to delivering high-quality solutions is underscored by my dedication to enhancing system reliability, even under heavy usage.
-            </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">June 2022 - Present</span>
-          </div>
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
+                <div class="w-20 h-1.5 bg-primary mx-auto rounded-full"></div>
+            </div>
+            <div class="max-w-3xl mx-auto text-center reveal">
+                <p class="text-xl text-slate-600 leading-relaxed mb-8">
+                    I am a Full-stack Web Developer with over 6 years of experience in building scalable web applications and high-performance APIs. My expertise lies in enhancing system efficiency, driving end-to-end project delivery, and collaborating with cross-functional teams to deliver high-quality, user-focused solutions.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                    <div class="bg-slate-50 p-6 rounded-2xl shadow-sm border-l-4 border-primary">
+                        <h3 class="font-bold text-lg mb-2 text-primary">Philosophy</h3>
+                        <p class="text-slate-600">Committed to clean code, architectural integrity, and creating seamless user experiences.</p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-2xl shadow-sm border-l-4 border-primary">
+                        <h3 class="font-bold text-lg mb-2 text-primary">Interests</h3>
+                        <p class="text-slate-600">Passionate about IOT, Smart Agriculture, and optimizing system performance.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Software Engineer</h3>
-            <div class="subheading mb-3"><a href="https://nagadhat.com.bd/" target="_blank">Nagadhat Bangladesh Limited</a></div>
-            <p class="text-justify">
-              In my role, I took charge of managing and maintaining the official website, where I not only ensured its smooth operation but also implemented custom features to enhance its
-              functionality and user experience. I demonstrated proficiency in designing and seamlessly integrating APIs by following the repository pattern, which streamlined data interaction and
-              improved overall system efficiency. <br><br> For transparency and ease of use, I diligently documented these APIs using 'Swagger,' making it straightforward for other developers to
-              understand and work with them. Additionally, I successfully integrated and managed the bKash payment gateway, a crucial component for facilitating secure online transactions. <br><br> To
-              create an engaging and user-friendly interface, I leveraged a combination of 'Laravel Blade' and Vue.js, enabling dynamic and responsive UI components. This holistic approach to web
-              development encompassed both back-end and front-end aspects, ensuring a comprehensive and well-rounded digital experience for users.
-            </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">January 2022 - May 2022</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Junior Developer (Web)</h3>
-            <div class="subheading mb-3"><a href="https://thebangladeshtoday.com/" target="_blank">The Bangladesh Today</a></div>
-            <p class="text-justify">
-              I've been responsible for crafting responsive user interfaces using a combination of HTML, CSS, Bootstrap, and JavaScript, ensuring an optimal viewing experience across various devices
-              and screen sizes. On the backend, I've adeptly developed essential features utilizing the Laravel framework, bolstering the functionality of web applications. <br><br> My role also
-              involved the design and ongoing maintenance of SQL databases, ensuring efficient data storage and retrieval to support application operations seamlessly. Additionally, I've contributed
-              to enhancing user experiences by constructing custom dashboards, providing users with intuitive tools and insights within web applications. This holistic approach to web development
-              spans front-end and back-end aspects, allowing for comprehensive and user-centric digital solutions.
-            </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">July 2019 - December 2021</span>
-          </div>
-        </div>
-      </div>
-
     </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-      <div class="my-auto">
-        <h2 class="mb-5">Education</h2>
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Experience</h2>
+                <div class="w-20 h-1.5 bg-primary mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="relative max-w-4xl mx-auto">
+                <div class="absolute left-0 md:left-1/2 h-full w-0.5 bg-slate-200 transform md:-translate-x-1/2 hidden md:block"></div>
 
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <a href="https://diu.ac/" target="_blank">
-              <h3 class="mb-0">Dhaka International University</h3>
-            </a>
-            <div class="subheading mb-3">Bachelor of Science</div>
-            <div>Electrical, Electronics, and Telecommunication Engineering</div>
-            <p>CGPA: 3.55</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Session: 2014-2015</span>
-          </div>
+                <!-- Exp 1 -->
+                <div class="relative mb-12 reveal">
+                    <div class="md:flex items-center">
+                        <div class="md:w-1/2 pr-0 md:pr-12 md:text-right mb-4 md:mb-0">
+                            <h3 class="text-xl font-bold">Sr. Software Engineer</h3>
+                            <p class="text-primary font-semibold">JRF Intelligence Bangladesh</p>
+                            <p class="text-slate-500 text-sm">Jan 2025 - Present</p>
+                        </div>
+                        <div class="absolute left-[-10px] md:left-1/2 w-5 h-5 bg-primary rounded-full transform md:-translate-x-1/2 z-10 hidden md:block"></div>
+                        <div class="md:w-1/2 pl-0 md:pl-12">
+                            <div class="bg-white p-6 rounded-2xl shadow-md border-l-4 border-primary">
+                                <p class="text-slate-600">Design and develop 'Job Portal' application. Tech-stack: Laravel, Vue.js, Redis, MySQL.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exp 2 -->
+                <div class="relative mb-12 reveal">
+                    <div class="md:flex items-center flex-row-reverse">
+                        <div class="md:w-1/2 pl-0 md:pl-12 mb-4 md:mb-0">
+                            <h3 class="text-xl font-bold">Software Engineer</h3>
+                            <p class="text-primary font-semibold">Technosoft Informatics Ltd</p>
+                            <p class="text-slate-500 text-sm">Nov 2023 - Dec 2024</p>
+                        </div>
+                        <div class="absolute left-[-10px] md:left-1/2 w-5 h-5 bg-primary rounded-full transform md:-translate-x-1/2 z-10 hidden md:block"></div>
+                        <div class="md:w-1/2 pr-0 md:pr-12 md:text-right">
+                            <div class="bg-white p-6 rounded-2xl shadow-md border-r-0 md:border-r-4 border-primary">
+                                <p class="text-slate-600">Worked with LMS system, POS features, and query optimization. Tech-stack: Laravel, Vue.js, Node.js, MySQL.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exp 3 -->
+                <div class="relative mb-12 reveal">
+                    <div class="md:flex items-center">
+                        <div class="md:w-1/2 pr-0 md:pr-12 md:text-right mb-4 md:mb-0">
+                            <h3 class="text-xl font-bold">Software Engineer</h3>
+                            <p class="text-primary font-semibold">Nodes Digital Limited</p>
+                            <p class="text-slate-500 text-sm">June 2022 - Oct 2023</p>
+                        </div>
+                        <div class="absolute left-[-10px] md:left-1/2 w-5 h-5 bg-primary rounded-full transform md:-translate-x-1/2 z-10 hidden md:block"></div>
+                        <div class="md:w-1/2 pl-0 md:pl-12">
+                            <div class="bg-white p-6 rounded-2xl shadow-md border-l-4 border-primary">
+                                <p class="text-slate-600">Developed APIs for mobile and web, managed MySQL schemas, and implemented Vue.js frontends.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exp 4 -->
+                <div class="relative mb-12 reveal">
+                    <div class="md:flex items-center flex-row-reverse">
+                        <div class="md:w-1/2 pl-0 md:pl-12 mb-4 md:mb-0">
+                            <h3 class="text-xl font-bold">Software Engineer</h3>
+                            <p class="text-primary font-semibold">Nagadhat Bangladesh Limited</p>
+                            <p class="text-slate-500 text-sm">Jan 2022 - May 2022</p>
+                        </div>
+                        <div class="absolute left-[-10px] md:left-1/2 w-5 h-5 bg-primary rounded-full transform md:-translate-x-1/2 z-10 hidden md:block"></div>
+                        <div class="md:w-1/2 pr-0 md:pr-12 md:text-right">
+                            <div class="bg-white p-6 rounded-2xl shadow-md border-r-0 md:border-r-4 border-primary">
+                                <p class="text-slate-600">Integrated bKash payment gateway and documented APIs using Swagger.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exp 5 -->
+                <div class="relative mb-12 reveal">
+                    <div class="md:flex items-center">
+                        <div class="md:w-1/2 pr-0 md:pr-12 md:text-right mb-4 md:mb-0">
+                            <h3 class="text-xl font-bold">Jr. Web Developer</h3>
+                            <p class="text-primary font-semibold">The Bangladesh Today</p>
+                            <p class="text-slate-500 text-sm">July 2019 - Dec 2021</p>
+                        </div>
+                        <div class="absolute left-[-10px] md:left-1/2 w-5 h-5 bg-primary rounded-full transform md:-translate-x-1/2 z-10 hidden md:block"></div>
+                        <div class="md:w-1/2 pl-0 md:pl-12">
+                            <div class="bg-white p-6 rounded-2xl shadow-md border-l-4 border-primary">
+                                <p class="text-slate-600">Developed account management applications and updated existing websites using Laravel.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row">
-          <div class="resume-content mr-auto">
-            <a href="https://kpik.gov.bd/" target="_blank">
-              <h3 class="mb-0">Kurigram Polytechnic Institute</h3>
-            </a>
-            <div class="subheading mb-3">Diploma in Engineering</div>
-            <div>Electronics Technology</div>
-            <p>CGPA: 3.37</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Session: 2009-10</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row">
-          <div class="resume-content mr-auto">
-            <a href="https://taupghs.edu.bd/" target="_blank">
-              <h3 class="mb-0">Thanahat A. U. Pilot High School</h3>
-            </a>
-            <div class="subheading mb-3">Secondary School Certificate (SSC)</div>
-            <div>Science Group</div>
-            <p>GPA: 4.81</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Session: 2007-08</span>
-          </div>
-        </div>
-
-      </div>
     </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-      <div class="my-auto">
-        <h2 class="mb-5">Skills</h2>
-        <div class="row mb-3">
-          <div class="col-12 col-md-6 mb-3">
-            <div class="subheading mb-3">Working Principle</div>
-            <ul class="fa-ul mb-0">
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                Mobile-First, Responsive Design
-              </li>
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                Optimized Performance
-              </li>
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                Security-First Approach
-              </li>
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                Cross Browser Testing &amp; Debugging
-              </li>
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                Cross Functional Teams
-              </li>
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                Version Control & Documentation
-              </li>
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                Agile Development & Scrum
-              </li>
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Technical Skills</h2>
+                <div class="w-20 h-1.5 bg-primary mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal">
+                <!-- Backend -->
+                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm border-t-4 border-primary">
+                    <h3 class="text-xl font-bold mb-6 flex items-center"><i class="fas fa-server text-primary mr-3"></i> Backend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-white rounded-lg shadow-sm border border-slate-100 text-slate-700">PHP</span>
+                        <span class="px-4 py-2 bg-white rounded-lg shadow-sm border border-slate-100 text-slate-700">Laravel</span>
+                        <span class="px-4 py-2 bg-white rounded-lg shadow-sm border border-slate-100 text-slate-700">Node.js</span>
+                        <span class="px-4 py-2 bg-white rounded-lg shadow-sm border border-slate-100 text-slate-700">MySQL</span>
+                        <span class="px-4 py-2 bg-white rounded-lg shadow-sm border border-slate-100 text-slate-700">MongoDB</span>
+                        <span class="px-4 py-2 bg-white rounded-lg shadow-sm border border-slate-100 text-slate-700">Redis</span>
+                    </div>
+                </div>
 
-            </ul>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="subheading mb-3">Worked With</div>
-            <ul class="fa-ul mb-0">
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                Laravel Role and permission <strong>|</strong> Token-based authentication
-              </li>
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                Cron/Task scheduling <strong>|</strong> Queue jobs <strong>|</strong> Session <strong>|</strong> Cache
-              </li>
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                Repository design pattern<strong>|</strong>Data table<strong>|</strong>Custom filtering
-              </li>
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                Report generation<strong>|</strong>Chart<strong>|</strong>Export-Import<strong>|</strong>Third-party APIs
-              </li>
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                Payment gateway<strong>|</strong>Social Login<strong>|</strong>SMS<strong>|</strong>Email & Notification
-              </li>
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                Digital Ocean<strong>|</strong>Microservice based application<strong>|</strong>Load testing
-              </li>
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                Vue.Js<strong>|</strong>Axios<strong>|</strong>Vue Route<strong>|</strong>Vuex<strong>|</strong>Vuetify
-              </li>
-            </ul>
-          </div>
-          <!-- <div class="col-12 col-md-6">
-            <div class="subheading mb-3">Key Projects</div>
-            <ul class="fa-ul mb-0">
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                Smart Agriculture (Nodes Digital Limited).
-              </li>
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                Shipping Survey Management (Nodes Digital Limited).
-              </li>
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                Microfinance Platform (Promise Group).
-              </li>
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                E-commerce Website (Nagadhat).
-              </li>
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                Ads Management System (The Bangladesh Today).
-              </li>
-              <li>
-                <i class="fa-li fa fa-check"></i>
-                Online News Portal (The Bangladesh Today).
-              </li>
-            </ul>
-          </div> -->
+                <!-- Frontend -->
+                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm border-t-4 border-primary">
+                    <h3 class="text-xl font-bold mb-6 flex items-center"><i class="fas fa-code text-primary mr-3"></i> Frontend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-white rounded-lg shadow-sm border border-slate-100 text-slate-700">JavaScript</span>
+                        <span class="px-4 py-2 bg-white rounded-lg shadow-sm border border-slate-100 text-slate-700">Vue.js</span>
+                        <span class="px-4 py-2 bg-white rounded-lg shadow-sm border border-slate-100 text-slate-700">Tailwind</span>
+                        <span class="px-4 py-2 bg-white rounded-lg shadow-sm border border-slate-100 text-slate-700">HTML5</span>
+                        <span class="px-4 py-2 bg-white rounded-lg shadow-sm border border-slate-100 text-slate-700">CSS3</span>
+                        <span class="px-4 py-2 bg-white rounded-lg shadow-sm border border-slate-100 text-slate-700">Bootstrap</span>
+                    </div>
+                </div>
+
+                <!-- DevOps & Tools -->
+                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm border-t-4 border-primary">
+                    <h3 class="text-xl font-bold mb-6 flex items-center"><i class="fas fa-tools text-primary mr-3"></i> DevOps & Tools</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-white rounded-lg shadow-sm border border-slate-100 text-slate-700">Docker</span>
+                        <span class="px-4 py-2 bg-white rounded-lg shadow-sm border border-slate-100 text-slate-700">Digital Ocean</span>
+                        <span class="px-4 py-2 bg-white rounded-lg shadow-sm border border-slate-100 text-slate-700">GitHub CI</span>
+                        <span class="px-4 py-2 bg-white rounded-lg shadow-sm border border-slate-100 text-slate-700">Postman</span>
+                        <span class="px-4 py-2 bg-white rounded-lg shadow-sm border border-slate-100 text-slate-700">Jira</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-        <ul class="list-inline list-icons">
-          <li class="list-inline-item">
-            <i class="devicons devicons-html5"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-css3"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-javascript"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-jquery"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-bootstrap"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-php"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-laravel"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-react"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-visualstudio"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-database"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-mysql"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-github"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-npm"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-digital-ocean"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-trello"></i>
-          </li>
-          <!-- <li class="list-inline-item">
-            <i class="devicons devicons-photoshop"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-illustrator"></i>
-          </li> -->
-        </ul>
-      </div>
     </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
-      <div class="my-auto">
-        <h2 class="mb-5">Projects</h2>
-        <div class="col-12 col-md-6 mb-3">
-          <div class="subheading mb-3">Key Projects</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Smart Agriculture (Nodes Digital Limited).
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Shipping Survey Management (Nodes Digital Limited).
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Microfinance Platform (Promise Group).
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              E-commerce Website (Nagadhat).
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Ads Management System (The Bangladesh Today).
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Online News Portal (The Bangladesh Today).
-            </li>
-          </ul>
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
+                <div class="w-20 h-1.5 bg-primary mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-100 group reveal">
+                    <div class="h-48 bg-slate-100 flex items-center justify-center overflow-hidden">
+                        <i class="fas fa-briefcase text-slate-400 text-5xl group-hover:scale-110 transition-transform duration-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Job Portal Application</h3>
+                        <p class="text-slate-600 mb-4">A complete end-to-end recruitment platform designed for high traffic and performance.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs font-bold text-primary bg-blue-50 px-2 py-1 rounded">Laravel</span>
+                            <span class="text-xs font-bold text-primary bg-blue-50 px-2 py-1 rounded">Vue.js</span>
+                            <span class="text-xs font-bold text-primary bg-blue-50 px-2 py-1 rounded">Redis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-100 group reveal">
+                    <div class="h-48 bg-slate-100 flex items-center justify-center overflow-hidden">
+                        <i class="fas fa-shopping-cart text-slate-400 text-5xl group-hover:scale-110 transition-transform duration-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">POS & LMS Systems</h3>
+                        <p class="text-slate-600 mb-4">Enterprise solutions for inventory management and online learning management.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs font-bold text-primary bg-blue-50 px-2 py-1 rounded">Node.js</span>
+                            <span class="text-xs font-bold text-primary bg-blue-50 px-2 py-1 rounded">MySQL</span>
+                            <span class="text-xs font-bold text-primary bg-blue-50 px-2 py-1 rounded">RBAC</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-100 group reveal">
+                    <div class="h-48 bg-slate-100 flex items-center justify-center overflow-hidden">
+                        <i class="fas fa-leaf text-slate-400 text-5xl group-hover:scale-110 transition-transform duration-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">IOT 'Smart Agriculture'</h3>
+                        <p class="text-slate-600 mb-4">Innovative IOT project focused on optimizing agricultural processes through data.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs font-bold text-primary bg-blue-50 px-2 py-1 rounded">IOT</span>
+                            <span class="text-xs font-bold text-primary bg-blue-50 px-2 py-1 rounded">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-100 group reveal">
+                    <div class="h-48 bg-slate-100 flex items-center justify-center overflow-hidden">
+                        <i class="fas fa-ship text-slate-400 text-5xl group-hover:scale-110 transition-transform duration-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Shipping Survey Management</h3>
+                        <p class="text-slate-600 mb-4">A robust management system for tracking and reporting shipping surveys and logistics.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs font-bold text-primary bg-blue-50 px-2 py-1 rounded">Laravel</span>
+                            <span class="text-xs font-bold text-primary bg-blue-50 px-2 py-1 rounded">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-100 group reveal">
+                    <div class="h-48 bg-slate-100 flex items-center justify-center overflow-hidden">
+                        <i class="fas fa-hand-holding-usd text-slate-400 text-5xl group-hover:scale-110 transition-transform duration-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Microfinance Platform</h3>
+                        <p class="text-slate-600 mb-4">Digitalizing financial services for small-scale entrepreneurs and credit management.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs font-bold text-primary bg-blue-50 px-2 py-1 rounded">Laravel</span>
+                            <span class="text-xs font-bold text-primary bg-blue-50 px-2 py-1 rounded">Financial Tech</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-100 group reveal">
+                    <div class="h-48 bg-slate-100 flex items-center justify-center overflow-hidden">
+                        <i class="fas fa-newspaper text-slate-400 text-5xl group-hover:scale-110 transition-transform duration-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Online News Portal</h3>
+                        <p class="text-slate-600 mb-4">High-performance news delivery platform with real-time updates and categorization.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs font-bold text-primary bg-blue-50 px-2 py-1 rounded">PHP</span>
+                            <span class="text-xs font-bold text-primary bg-blue-50 px-2 py-1 rounded">Laravel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-      <div class="my-auto">
-        <h2 class="mb-5">Interests</h2>
-        <p class="text-justify">As a passionate software engineer, my enthusiasm for technology extends to both my professional and personal life. Beyond coding and building software, I have a deep
-          passion for outdoor activities. Cricket and chess are my favorite sports, and I love to challenge myself with strategic moves. Traveling, in particular, is a source of pure joy, and I find
-          it fascinating to explore new destinations and cultures.</p>
-        <p class="text-justify">In the winter, I savor early morning walks by the riverside, where the grass is covered in frost. This tranquil experience is one of my favorite ways to unwind. I also
-          have a soft spot for the Winter Pie Festival and indulge in the delicious treats it offers.</p>
-        <p class="text-justify">During my indoor leisure time, I immerse myself in the world of sci-fi movies and TV shows. There's nothing like the thrill of futuristic adventures and mind-bending
-          narratives. I'm an ardent reader of tech articles and novels, constantly expanding my knowledge horizons.</p>
-        <p class="text-justify">In fact, I'm always on the lookout for the latest technological advancements. I dedicate a significant portion of my free time to staying up-to-date with the
-          ever-evolving tech landscape.</p>
-      </div>
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Education</h2>
+                <div class="w-20 h-1.5 bg-primary mx-auto rounded-full"></div>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-8 reveal">
+                <div class="flex items-start bg-slate-50 p-6 rounded-2xl border-l-4 border-primary">
+                    <div class="bg-primary/10 p-4 rounded-xl mr-6">
+                        <i class="fas fa-graduation-cap text-primary text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">B.Sc. in Engineering (EETE)</h3>
+                        <p class="text-slate-600 font-medium">Dhaka International University</p>
+                        <p class="text-slate-400 text-sm">2014 - 2018</p>
+                    </div>
+                </div>
+                <div class="flex items-start bg-slate-50 p-6 rounded-2xl border-l-4 border-primary">
+                    <div class="bg-primary/10 p-4 rounded-xl mr-6">
+                        <i class="fas fa-graduation-cap text-primary text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Diploma in Electronics Engineering</h3>
+                        <p class="text-slate-600 font-medium">Kurigram Polytechnic Institute</p>
+                        <p class="text-slate-400 text-sm">2009 - 2014</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-      <div class="my-auto">
-        <h2 class="mb-5">Awards &amp; Certifications</h2>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Top-up IT Training on Java - Bangladesh Computer Council.
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            IT Support Technical - Bangladesh Association of Software and Information Services (BASIS).
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Web Design Training - Ministry of Information and Communication Technology (MoICT), Bagladesh.
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            National Mobile Application Development and Capacity Building Program - MoICT, Bagladesh.
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Advanced English Certificate Course - Dhaka International University.
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Leadership Skills and Performing Arts - Global Leader Foundation.
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            3<sup>rd</sup>
-            Place - Dhaka International University - Inter-departmental Debate Competition 2016.
-          </li>
-        </ul>
-      </div>
-    </section>
+    <!-- Contact Section -->
+    <footer id="contact" class="bg-slate-900 text-white py-20 relative">
+        <a href="#home" class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-2xl hover:bg-blue-700 transition-all">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Let's Connect</h2>
+                    <p class="text-slate-400 mb-8 max-w-md text-lg leading-relaxed">
+                        Currently open to new opportunities and collaborations. Feel free to reach out via email or connect on LinkedIn.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-primary text-xl mr-4"></i>
+                            <span class="text-slate-300">biplob.net2@gmail.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-primary text-xl mr-4"></i>
+                            <span class="text-slate-300">+880-1725361208</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-primary text-xl mr-4"></i>
+                            <span class="text-slate-300">Mirpur, Dhaka, Bangladesh</span>
+                        </div>
+                    </div>
+                    <div class="mt-10 flex space-x-6 text-2xl">
+                        <a href="https://github.com/biplob192" class="text-slate-400 hover:text-white transition-colors"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/biplob192" class="text-slate-400 hover:text-white transition-colors"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="bg-white/5 p-8 rounded-2xl backdrop-blur-sm">
+                    <form id="contact-form" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium mb-1">Name</label>
+                            <input type="text" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 focus:outline-none focus:border-primary transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-1">Email</label>
+                            <input type="email" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 focus:outline-none focus:border-primary transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-1">Message</label>
+                            <textarea rows="4" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 focus:outline-none focus:border-primary transition-colors"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition-all">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-20 pt-8 border-t border-white/10 text-center text-slate-500 text-sm">
+                <p>&copy; 2026 MD. Biplob Mia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-  </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
