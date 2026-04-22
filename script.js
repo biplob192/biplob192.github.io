@@ -3,14 +3,16 @@ const mobileMenuButton = document.getElementById('mobile-menu-button');
 const mobileMenu = document.getElementById('mobile-menu');
 
 mobileMenuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.remove('hidden');
+    mobileMenu.classList.toggle('open');
 });
 
 // Close mobile menu when clicking a link
 const mobileLinks = mobileMenu.querySelectorAll('a');
 mobileLinks.forEach(link => {
     link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('open');
+        setTimeout(() => mobileMenu.classList.add('hidden'), 300);
     });
 });
 

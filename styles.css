@@ -67,6 +67,19 @@ nav a[href="#contact"]:hover {
     background: #1d4ed8;
 }
 
+/* Mobile Menu - Smooth Transition */
+#mobile-menu {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+#mobile-menu.open {
+    max-height: 500px;
+    opacity: 1;
+}
+
 /* Layout Utilities */
 .whitespace-nowrap {
     white-space: nowrap;
