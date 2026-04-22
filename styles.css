@@ -20,6 +20,35 @@
     animation: float 4s ease-in-out infinite;
 }
 
+/* =========================================
+   CONTACT MENU - CLEAN HIGHLIGHT
+   ========================================= */
+
+/* Desktop Navigation - Contact Link */
+nav a[href="#contact"] {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    color: white !important;
+    font-weight: 600;
+    padding: 8px 20px !important;
+    border-radius: 9999px;
+    transition: all 0.2s ease;
+}
+
+nav a[href="#contact"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
+/* Mobile Navigation - Contact Link */
+#mobile-menu a[href="#contact"] {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+    color: white !important;
+    font-weight: 600;
+    margin: 4px 0;
+    border-radius: 9999px;
+    text-align: center;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;

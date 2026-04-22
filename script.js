@@ -85,9 +85,9 @@ if (contactForm) {
     });
 }
 
-// Active link highlighting on scroll
+// Active link highlighting on scroll - applies to all nav links
 const sections = document.querySelectorAll('section, footer');
-const navLinks = document.querySelectorAll('nav .hidden a');
+const navLinks = document.querySelectorAll('nav a[href^="#"]');
 
 window.addEventListener('scroll', () => {
     let current = '';
@@ -101,9 +101,14 @@ window.addEventListener('scroll', () => {
     });
     
     navLinks.forEach(link => {
-        link.classList.remove('text-primary');
-        if (link.getAttribute('href').includes(current)) {
-            link.classList.add('text-primary');
+        const href = link.getAttribute('href').replace('#', '');
+        // Remove all active-state classes
+        link.classList.remove('text-primary', 'font-semibold');
+        
+        // Add active styling for non-contact links
+        if (href === current && href !== 'contact') {
+            link.classList.add('text-primary', 'font-semibold');
         }
+        // Contact menu keeps its special CSS styling automatically
     });
 });
