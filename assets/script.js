@@ -114,3 +114,29 @@ window.addEventListener('scroll', () => {
         // Contact menu keeps its special CSS styling automatically
     });
 });
+
+// Back to Top Button
+const backToTopButton = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('visible');
+        backToTopButton.classList.remove('invisible');
+        backToTopButton.classList.remove('opacity-0');
+        backToTopButton.classList.remove('translate-y-4');
+    } else {
+        backToTopButton.classList.remove('visible');
+        backToTopButton.classList.add('invisible');
+        backToTopButton.classList.add('opacity-0');
+        backToTopButton.classList.add('translate-y-4');
+    }
+});
+
+// Smooth scroll to top on click
+backToTopButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});

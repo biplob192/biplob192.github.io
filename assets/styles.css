@@ -90,6 +90,24 @@ input:focus, textarea:focus {
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
 }
 
+/* =========================================
+   BACK TO TOP BUTTON
+   ========================================= */
+#back-to-top {
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+#back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#back-to-top:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
 /* Responsive adjustments for name */
 @media (max-width: 1024px) {
     .whitespace-nowrap {
