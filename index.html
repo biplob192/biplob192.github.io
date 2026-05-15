@@ -158,108 +158,224 @@
     <!-- Services Section -->
     <section id="services" class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 reveal">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">My Services</h2>
-                <div class="w-20 h-1.5 bg-primary mx-auto rounded-full"></div>
-                <p class="text-slate-600 mt-6 max-w-2xl mx-auto text-lg">
-                    Comprehensive software engineering solutions tailored to your business needs. From ideation to deployment, I deliver high-quality, scalable applications.
-                </p>
+            <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-14 reveal">
+                <div class="max-w-2xl">
+                    <span class="inline-flex items-center text-sm font-bold text-primary bg-blue-50 px-4 py-2 rounded-full mb-4">
+                        <i class="fas fa-screwdriver-wrench mr-2"></i>
+                        What I Build
+                    </span>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">My Services</h2>
+                    <div class="w-20 h-1.5 bg-primary rounded-full mb-6"></div>
+                    <p class="text-lg text-slate-600 leading-relaxed">
+                        Comprehensive software engineering solutions tailored to business needs. From planning and architecture to launch, I build reliable systems that are maintainable, scalable, and ready for real users.
+                    </p>
+                </div>
+                <div class="grid grid-cols-3 gap-3 w-full lg:w-auto">
+                    <div class="bg-white border border-slate-200 rounded-xl px-5 py-4 text-center">
+                        <div class="text-2xl font-black text-primary">6+</div>
+                        <div class="text-xs font-semibold text-slate-500 uppercase tracking-wide">Years</div>
+                    </div>
+                    <div class="bg-white border border-slate-200 rounded-xl px-5 py-4 text-center">
+                        <div class="text-2xl font-black text-primary">API</div>
+                        <div class="text-xs font-semibold text-slate-500 uppercase tracking-wide">First</div>
+                    </div>
+                    <div class="bg-white border border-slate-200 rounded-xl px-5 py-4 text-center">
+                        <div class="text-2xl font-black text-primary">Ops</div>
+                        <div class="text-xs font-semibold text-slate-500 uppercase tracking-wide">Ready</div>
+                    </div>
+                </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Service 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 hover:shadow-xl transition-shadow reveal">
-                    <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-code text-2xl text-primary"></i>
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl overflow-hidden border border-slate-100 group reveal transition-all duration-300 hover:-translate-y-1">
+                    <div class="h-44 bg-gradient-to-br from-blue-600 to-slate-900 p-6 flex flex-col justify-between overflow-hidden relative">
+                        <div class="absolute -right-8 -bottom-10 text-white/10 text-9xl group-hover:scale-110 transition-transform duration-500">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="relative z-10 flex items-center justify-between">
+                            <span class="text-xs font-bold uppercase tracking-wider text-blue-100 bg-white/10 border border-white/20 px-3 py-1 rounded-full">Web Apps</span>
+                            <i class="fas fa-laptop-code text-white/80"></i>
+                        </div>
+                        <div class="relative z-10">
+                            <div class="w-12 h-12 bg-white/15 rounded-xl flex items-center justify-center mb-4">
+                                <i class="fas fa-code text-white text-xl"></i>
+                            </div>
+                            <p class="text-blue-100 text-sm font-semibold">End-to-end product development</p>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Full-Stack Web Development</h3>
-                    <p class="text-slate-600 leading-relaxed mb-6">
-                        End-to-end web application development using modern frameworks like Laravel, Vue.js, Node.js, and React. Responsive, performant, and user-friendly solutions.
-                    </p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1 rounded-full">Laravel</span>
-                        <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1 rounded-full">Vue.js</span>
-                        <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1 rounded-full">Node.js</span>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Full-Stack Web Development</h3>
+                        <p class="text-slate-600 mb-4 leading-relaxed">Responsive, performant, and user-friendly applications built with modern frontend and backend frameworks.</p>
+                        <ul class="space-y-2 mb-5 text-sm text-slate-600">
+                            <li class="flex items-start"><i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>Clean architecture from frontend to backend</li>
+                            <li class="flex items-start"><i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>Production-ready features and admin workflows</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs font-bold text-primary bg-blue-50 px-3 py-1.5 rounded-full">Laravel</span>
+                            <span class="text-xs font-bold text-primary bg-blue-50 px-3 py-1.5 rounded-full">Vue.js</span>
+                            <span class="text-xs font-bold text-primary bg-blue-50 px-3 py-1.5 rounded-full">Node.js</span>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 hover:shadow-xl transition-shadow reveal">
-                    <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-plug text-2xl text-primary"></i>
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl overflow-hidden border border-slate-100 group reveal transition-all duration-300 hover:-translate-y-1">
+                    <div class="h-44 bg-gradient-to-br from-emerald-500 to-slate-900 p-6 flex flex-col justify-between overflow-hidden relative">
+                        <div class="absolute -right-8 -bottom-10 text-white/10 text-9xl group-hover:scale-110 transition-transform duration-500">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <div class="relative z-10 flex items-center justify-between">
+                            <span class="text-xs font-bold uppercase tracking-wider text-emerald-50 bg-white/10 border border-white/20 px-3 py-1 rounded-full">Integrations</span>
+                            <i class="fas fa-diagram-project text-white/80"></i>
+                        </div>
+                        <div class="relative z-10">
+                            <div class="w-12 h-12 bg-white/15 rounded-xl flex items-center justify-center mb-4">
+                                <i class="fas fa-plug text-white text-xl"></i>
+                            </div>
+                            <p class="text-emerald-50 text-sm font-semibold">Reliable APIs and connected systems</p>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">API Development & Integration</h3>
-                    <p class="text-slate-600 leading-relaxed mb-6">
-                        RESTful and GraphQL API design, third-party integrations, payment gateway setup (bKash, Stripe, PayPal), and microservices architecture implementation.
-                    </p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1 rounded-full">REST APIs</span>
-                        <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1 rounded-full">GraphQL</span>
-                        <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1 rounded-full">Payment Gateways</span>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">API Development & Integration</h3>
+                        <p class="text-slate-600 mb-4 leading-relaxed">RESTful and GraphQL API design, third-party integrations, payment gateways, and service-to-service workflows.</p>
+                        <ul class="space-y-2 mb-5 text-sm text-slate-600">
+                            <li class="flex items-start"><i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>Secure, documented endpoints for web and mobile</li>
+                            <li class="flex items-start"><i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>bKash, Stripe, PayPal, and external platform setup</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-full">REST APIs</span>
+                            <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-full">GraphQL</span>
+                            <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-full">Payments</span>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 hover:shadow-xl transition-shadow reveal">
-                    <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-database text-2xl text-primary"></i>
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl overflow-hidden border border-slate-100 group reveal transition-all duration-300 hover:-translate-y-1">
+                    <div class="h-44 bg-gradient-to-br from-violet-500 to-slate-900 p-6 flex flex-col justify-between overflow-hidden relative">
+                        <div class="absolute -right-8 -bottom-10 text-white/10 text-9xl group-hover:scale-110 transition-transform duration-500">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="relative z-10 flex items-center justify-between">
+                            <span class="text-xs font-bold uppercase tracking-wider text-violet-50 bg-white/10 border border-white/20 px-3 py-1 rounded-full">Data Layer</span>
+                            <i class="fas fa-table-cells text-white/80"></i>
+                        </div>
+                        <div class="relative z-10">
+                            <div class="w-12 h-12 bg-white/15 rounded-xl flex items-center justify-center mb-4">
+                                <i class="fas fa-database text-white text-xl"></i>
+                            </div>
+                            <p class="text-violet-50 text-sm font-semibold">Schema, migration, and query health</p>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Database Design & Optimization</h3>
-                    <p class="text-slate-600 leading-relaxed mb-6">
-                        Scalable database architecture, query optimization, indexing strategies, and data migration for MySQL, PostgreSQL, MongoDB, and Redis.
-                    </p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1 rounded-full">MySQL</span>
-                        <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1 rounded-full">PostgreSQL</span>
-                        <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1 rounded-full">MongoDB</span>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Database Design & Optimization</h3>
+                        <p class="text-slate-600 mb-4 leading-relaxed">Scalable database architecture, query optimization, indexing strategies, and careful data migrations.</p>
+                        <ul class="space-y-2 mb-5 text-sm text-slate-600">
+                            <li class="flex items-start"><i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>Models and schemas built for long-term change</li>
+                            <li class="flex items-start"><i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>Indexes, caching, and profiling for faster responses</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs font-bold text-violet-700 bg-violet-50 px-3 py-1.5 rounded-full">MySQL</span>
+                            <span class="text-xs font-bold text-violet-700 bg-violet-50 px-3 py-1.5 rounded-full">PostgreSQL</span>
+                            <span class="text-xs font-bold text-violet-700 bg-violet-50 px-3 py-1.5 rounded-full">MongoDB</span>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Service 4 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 hover:shadow-xl transition-shadow reveal">
-                    <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-rocket text-2xl text-primary"></i>
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl overflow-hidden border border-slate-100 group reveal transition-all duration-300 hover:-translate-y-1">
+                    <div class="h-44 bg-gradient-to-br from-amber-500 to-slate-900 p-6 flex flex-col justify-between overflow-hidden relative">
+                        <div class="absolute -right-8 -bottom-10 text-white/10 text-9xl group-hover:scale-110 transition-transform duration-500">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="relative z-10 flex items-center justify-between">
+                            <span class="text-xs font-bold uppercase tracking-wider text-amber-50 bg-white/10 border border-white/20 px-3 py-1 rounded-full">Speed</span>
+                            <i class="fas fa-gauge-high text-white/80"></i>
+                        </div>
+                        <div class="relative z-10">
+                            <div class="w-12 h-12 bg-white/15 rounded-xl flex items-center justify-center mb-4">
+                                <i class="fas fa-rocket text-white text-xl"></i>
+                            </div>
+                            <p class="text-amber-50 text-sm font-semibold">Faster apps with measurable gains</p>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Performance Optimization</h3>
-                    <p class="text-slate-600 leading-relaxed mb-6">
-                        Application speed optimization, caching strategies with Redis, load balancing, code refactoring, and bottleneck identification and resolution.
-                    </p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1 rounded-full">Redis</span>
-                        <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1 rounded-full">Caching</span>
-                        <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1 rounded-full">CDN</span>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Performance Optimization</h3>
+                        <p class="text-slate-600 mb-4 leading-relaxed">Application speed optimization, caching strategies, load balancing, refactoring, and bottleneck resolution.</p>
+                        <ul class="space-y-2 mb-5 text-sm text-slate-600">
+                            <li class="flex items-start"><i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>Profiling to find the true performance cost</li>
+                            <li class="flex items-start"><i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>Cache, queue, and delivery improvements</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs font-bold text-amber-700 bg-amber-50 px-3 py-1.5 rounded-full">Redis</span>
+                            <span class="text-xs font-bold text-amber-700 bg-amber-50 px-3 py-1.5 rounded-full">Caching</span>
+                            <span class="text-xs font-bold text-amber-700 bg-amber-50 px-3 py-1.5 rounded-full">CDN</span>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Service 5 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 hover:shadow-xl transition-shadow reveal">
-                    <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-cloud text-2xl text-primary"></i>
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl overflow-hidden border border-slate-100 group reveal transition-all duration-300 hover:-translate-y-1">
+                    <div class="h-44 bg-gradient-to-br from-cyan-500 to-slate-900 p-6 flex flex-col justify-between overflow-hidden relative">
+                        <div class="absolute -right-8 -bottom-10 text-white/10 text-9xl group-hover:scale-110 transition-transform duration-500">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="relative z-10 flex items-center justify-between">
+                            <span class="text-xs font-bold uppercase tracking-wider text-cyan-50 bg-white/10 border border-white/20 px-3 py-1 rounded-full">Launch</span>
+                            <i class="fas fa-cloud-arrow-up text-white/80"></i>
+                        </div>
+                        <div class="relative z-10">
+                            <div class="w-12 h-12 bg-white/15 rounded-xl flex items-center justify-center mb-4">
+                                <i class="fas fa-cloud text-white text-xl"></i>
+                            </div>
+                            <p class="text-cyan-50 text-sm font-semibold">Deployment pipelines and monitoring</p>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">DevOps & Deployment</h3>
-                    <p class="text-slate-600 leading-relaxed mb-6">
-                        Containerization with Docker, CI/CD pipeline setup, cloud deployment (AWS, Digital Ocean), server management, and monitoring solutions.
-                    </p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1 rounded-full">Docker</span>
-                        <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1 rounded-full">AWS</span>
-                        <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1 rounded-full">CI/CD</span>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">DevOps & Deployment</h3>
+                        <p class="text-slate-600 mb-4 leading-relaxed">Containerization, CI/CD setup, cloud deployment, server management, and practical monitoring solutions.</p>
+                        <ul class="space-y-2 mb-5 text-sm text-slate-600">
+                            <li class="flex items-start"><i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>Repeatable release workflows with fewer surprises</li>
+                            <li class="flex items-start"><i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>Server setup for stable production operation</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs font-bold text-cyan-700 bg-cyan-50 px-3 py-1.5 rounded-full">Docker</span>
+                            <span class="text-xs font-bold text-cyan-700 bg-cyan-50 px-3 py-1.5 rounded-full">AWS</span>
+                            <span class="text-xs font-bold text-cyan-700 bg-cyan-50 px-3 py-1.5 rounded-full">CI/CD</span>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Service 6 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 hover:shadow-xl transition-shadow reveal">
-                    <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-lightbulb text-2xl text-primary"></i>
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl overflow-hidden border border-slate-100 group reveal transition-all duration-300 hover:-translate-y-1">
+                    <div class="h-44 bg-gradient-to-br from-rose-500 to-slate-900 p-6 flex flex-col justify-between overflow-hidden relative">
+                        <div class="absolute -right-8 -bottom-10 text-white/10 text-9xl group-hover:scale-110 transition-transform duration-500">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="relative z-10 flex items-center justify-between">
+                            <span class="text-xs font-bold uppercase tracking-wider text-rose-50 bg-white/10 border border-white/20 px-3 py-1 rounded-full">Strategy</span>
+                            <i class="fas fa-compass-drafting text-white/80"></i>
+                        </div>
+                        <div class="relative z-10">
+                            <div class="w-12 h-12 bg-white/15 rounded-xl flex items-center justify-center mb-4">
+                                <i class="fas fa-lightbulb text-white text-xl"></i>
+                            </div>
+                            <p class="text-rose-50 text-sm font-semibold">Technical direction for teams</p>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Technical Consultation</h3>
-                    <p class="text-slate-600 leading-relaxed mb-6">
-                        Architecture review, technology stack selection, code audits, best practices implementation, and technical mentorship for startups and teams.
-                    </p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1 rounded-full">Architecture</span>
-                        <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1 rounded-full">Code Review</span>
-                        <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1 rounded-full">Mentoring</span>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Technical Consultation</h3>
+                        <p class="text-slate-600 mb-4 leading-relaxed">Architecture review, stack selection, code audits, best practices, and technical mentorship for teams.</p>
+                        <ul class="space-y-2 mb-5 text-sm text-slate-600">
+                            <li class="flex items-start"><i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>Clear recommendations for risky technical choices</li>
+                            <li class="flex items-start"><i class="fas fa-check text-emerald-500 mt-1 mr-2"></i>Code review and delivery guidance for teams</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs font-bold text-rose-700 bg-rose-50 px-3 py-1.5 rounded-full">Architecture</span>
+                            <span class="text-xs font-bold text-rose-700 bg-rose-50 px-3 py-1.5 rounded-full">Code Review</span>
+                            <span class="text-xs font-bold text-rose-700 bg-rose-50 px-3 py-1.5 rounded-full">Mentoring</span>
+                        </div>
                     </div>
                 </div>
             </div>
