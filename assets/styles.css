@@ -1,23 +1,454 @@
-/* Custom Animations */
-.reveal {
+/* =========================================
+   HERO SECTION - BACKGROUND & DECORATIONS
+   ========================================= */
+
+.hero-section {
+  background: linear-gradient(160deg, #f8fafc 0%, #eff6ff 30%, #eef2ff 60%, #f0f9ff 100%);
+}
+
+/* Animated background gradient overlay */
+.hero-bg-gradient {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(37, 99, 235, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 50% at 85% 80%, rgba(139, 92, 246, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 40% at 15% 40%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Floating blobs */
+.hero-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.hero-blob-1 {
+  width: 400px;
+  height: 400px;
+  background: #2563eb;
+  top: -100px;
+  right: -80px;
+  animation: hero-blob-drift 18s ease-in-out infinite;
+}
+
+.hero-blob-2 {
+  width: 300px;
+  height: 300px;
+  background: #8b5cf6;
+  bottom: -60px;
+  left: -60px;
+  animation: hero-blob-drift 22s ease-in-out infinite reverse;
+}
+
+.hero-blob-3 {
+  width: 250px;
+  height: 250px;
+  background: #10b981;
+  top: 40%;
+  left: 50%;
+  animation: hero-blob-drift 20s ease-in-out infinite;
+}
+
+@keyframes hero-blob-drift {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(40px, -30px) scale(1.1);
+  }
+  50% {
+    transform: translate(-20px, 30px) scale(0.95);
+  }
+  75% {
+    transform: translate(30px, 20px) scale(1.05);
+  }
+}
+
+/* Dot pattern background */
+.hero-dots {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(37, 99, 235, 0.1) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 30%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 30%, transparent 70%);
+}
+
+/* =========================================
+   HERO - GREETING BADGE & WAVE
+   ========================================= */
+
+@keyframes hero-fade-in-up {
+  from {
     opacity: 0;
     transform: translateY(20px);
-    transition: all 0.6s ease-out;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: hero-fade-in-up 0.7s ease-out forwards;
+}
+
+@keyframes wave-animation {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(15deg);
+  }
+}
+
+.wave-emoji {
+  display: inline-block;
+  animation: wave-animation 1.5s ease-in-out infinite;
+  transform-origin: 70% 70%;
+}
+
+/* =========================================
+   HERO - GRADIENT TEXT (NAME)
+   ========================================= */
+
+.hero-gradient-text {
+  background: linear-gradient(135deg, #1e293b 0%, #2563eb 40%, #7c3aed 70%, #1e293b 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 6s ease-in-out infinite;
+}
+
+@keyframes gradient-shift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* =========================================
+   HERO - STATS ROW
+   ========================================= */
+
+.hero-stat {
+  text-align: center;
+  padding: 0.5rem 1.25rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.hero-stat:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.hero-stat-number {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #2563eb;
+  line-height: 1.2;
+}
+
+.hero-stat-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+/* =========================================
+   HERO - CTA BUTTONS
+   ========================================= */
+
+.hero-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
+  color: white;
+  padding: 0.875rem 2rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.35);
+  transition: all 0.3s ease;
+}
+
+.hero-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.45);
+}
+
+.hero-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  background: #1e293b;
+  color: white;
+  padding: 0.875rem 2rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 15px rgba(30, 41, 59, 0.3);
+  transition: all 0.3s ease;
+}
+
+.hero-btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(30, 41, 59, 0.45);
+  background: #334155;
+}
+
+/* =========================================
+   HERO - SOCIAL LINKS
+   ========================================= */
+
+.hero-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(226, 232, 240, 0.6);
+  color: #64748b;
+  transition: all 0.25s ease;
+}
+
+.hero-social-link:hover {
+  color: #2563eb;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.15);
+  border-color: rgba(37, 99, 235, 0.3);
+}
+
+.hero-social-link:hover i.fa-whatsapp {
+  color: #25d366;
+}
+.hero-social-link:hover i.fa-envelope {
+  color: #ea4335;
+}
+.hero-social-link:hover i.fa-linkedin {
+  color: #0a66c2;
+}
+.hero-social-link:hover i.fa-github {
+  color: #181717;
+}
+
+/* =========================================
+   HERO - CODE CARD
+   ========================================= */
+
+.hero-code-card {
+  position: relative;
+  z-index: 10;
+  animation: hero-float 5s ease-in-out infinite;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.hero-code-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes hero-float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/* Glow ring behind code card */
+.hero-card-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110%;
+  height: 110%;
+  background: radial-gradient(ellipse, rgba(37, 99, 235, 0.2) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(30px);
+  animation: hero-glow-pulse 4s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes hero-glow-pulse {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+}
+
+/* Terminal dots */
+.hero-dot {
+  transition: transform 0.2s ease;
+}
+.hero-code-card:hover .hero-dot:nth-child(1) {
+  transform: scale(1.2);
+}
+.hero-code-card:hover .hero-dot:nth-child(2) {
+  transform: scale(1.2);
+}
+.hero-code-card:hover .hero-dot:nth-child(3) {
+  transform: scale(1.2);
+}
+
+/* Blinking cursor */
+.hero-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.2em;
+  background: #22c55e;
+  vertical-align: text-bottom;
+  margin-left: 2px;
+  animation: hero-blink 1s step-end infinite;
+}
+
+@keyframes hero-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* =========================================
+   HERO - FLOATING BADGE
+   ========================================= */
+
+.hero-floating-badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
+  color: white;
+  padding: 1.25rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.35);
+  transform: rotate(3deg);
+  transition: transform 0.3s ease;
+  z-index: 20;
+  animation: hero-badge-float 5s ease-in-out infinite;
+}
+
+.hero-floating-badge:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+@keyframes hero-badge-float {
+  0%,
+  100% {
+    transform: rotate(3deg) translateY(0);
+  }
+  50% {
+    transform: rotate(3deg) translateY(-6px);
+  }
+}
+
+/* =========================================
+   HERO - SCROLL INDICATOR
+   ========================================= */
+
+.hero-scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  z-index: 5;
+  animation: hero-fade-in-up 0.7s ease-out 0.5s both;
+  opacity: 0;
+}
+
+.hero-scroll-mouse {
+  width: 26px;
+  height: 40px;
+  border: 2px solid rgba(100, 116, 139, 0.4);
+  border-radius: 14px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-scroll-wheel {
+  width: 4px;
+  height: 8px;
+  background: #2563eb;
+  border-radius: 2px;
+  position: absolute;
+  top: 8px;
+  animation: hero-scroll-wheel 1.8s ease-in-out infinite;
+}
+
+@keyframes hero-scroll-wheel {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0.2;
+    transform: translateY(12px);
+  }
+}
+
+/* =========================================
+   REVEAL ANIMATIONS
+   ========================================= */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
 }
 
 .reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
-}
-
-.animate-float {
-    animation: float 4s ease-in-out infinite;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* =========================================
@@ -26,91 +457,153 @@
 
 /* Desktop Navigation - Contact Link */
 nav a[href="#contact"] {
-    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
-    color: white !important;
-    font-weight: 600;
-    padding: 8px 20px !important;
-    border-radius: 9999px;
-    transition: all 0.2s ease;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: white !important;
+  font-weight: 600;
+  padding: 8px 20px !important;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
 }
 
 nav a[href="#contact"]:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
 }
 
 /* Mobile Navigation - Contact Link */
 #mobile-menu a[href="#contact"] {
-    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
-    color: white !important;
-    font-weight: 600;
-    margin: 4px 0;
-    border-radius: 9999px;
-    text-align: center;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+  color: white !important;
+  font-weight: 600;
+  margin: 4px 0;
+  border-radius: 9999px;
+  text-align: center;
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f5f9;
+  background: #f1f5f9;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #2563eb;
-    border-radius: 4px;
+  background: #2563eb;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #1d4ed8;
+  background: #1d4ed8;
 }
 
 /* Mobile Menu - Smooth Transition */
 #mobile-menu {
-    overflow: hidden;
-    max-height: 0;
-    opacity: 0;
-    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition:
+    max-height 0.3s ease-out,
+    opacity 0.3s ease-out;
 }
 
 #mobile-menu.open {
-    max-height: 500px;
-    opacity: 1;
+  max-height: 500px;
+  opacity: 1;
 }
 
 /* Layout Utilities */
 .whitespace-nowrap {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 /* Form Focus Effects */
-input:focus, textarea:focus {
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
 }
 
 /* =========================================
    BACK TO TOP BUTTON
    ========================================= */
 #back-to-top {
-    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.3s ease;
 }
 
 #back-to-top.visible {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 #back-to-top:focus {
-    outline: 2px solid white;
-    outline-offset: 2px;
+  outline: 2px solid white;
+  outline-offset: 2px;
 }
 
-/* Responsive adjustments for name */
+/* =========================================
+   HERO - RESPONSIVE ADJUSTMENTS
+   ========================================= */
+
+@media (max-width: 768px) {
+  .hero-gradient-text {
+    font-size: 2.5rem;
+  }
+
+  .hero-blob-1 {
+    width: 250px;
+    height: 250px;
+    top: -60px;
+    right: -40px;
+  }
+
+  .hero-blob-2 {
+    width: 200px;
+    height: 200px;
+    bottom: -40px;
+    left: -40px;
+  }
+
+  .hero-blob-3 {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hero-floating-badge {
+    bottom: -15px;
+    right: -10px;
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+  }
+
+  .hero-floating-badge .text-4xl {
+    font-size: 1.5rem;
+  }
+
+  .hero-card-glow {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-scroll-indicator {
+    display: none;
+  }
+
+  .hero-stat {
+    padding: 0.35rem 0.75rem;
+  }
+
+  .hero-stat-number {
+    font-size: 1.25rem;
+  }
+}
+
 @media (max-width: 1024px) {
-    .whitespace-nowrap {
-        white-space: normal;
-    }
+  .whitespace-nowrap {
+    white-space: normal;
+  }
 }
